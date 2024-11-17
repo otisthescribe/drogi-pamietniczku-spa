@@ -1,0 +1,97 @@
+// Define color variables for easier maintenance
+$background-color: #f9dbbd; // Main background color
+$text-color: #000000; // Text color for body
+$navbar-hover-color: #5e548e; // Navbar link hover color
+$button-color: #a53860; // Button color
+$button-text-color: #e9e9e9; // Button text color
+$button-hover-color: #da627d; // Button hover background color
+$category-background-color: #dde5b6;
+$events-background-color: #f28482;
+$timeline-background-color: #83c5be;
+
+// Body styles
+body {
+    background-color: $background-color;
+    color: $text-color;
+    padding-top: 60px; // Adjust based on navbar height
+    padding-bottom: 60px;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Navbar styles
+.navbar {
+    background-color: $background-color;
+    color: $text-color;
+
+    .navbar-brand {
+        color: $text-color;
+    }
+
+    .navbar-text {
+        color: $text-color;
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: $text-color; // Text color for navbar links
+        transition: color 0.3s; // Smooth transition for color change
+
+        &:hover {
+            color: $navbar-hover-color; // Change color on hover to dark green
+        }
+    }
+}
+
+// Footer styles
+footer {
+    text-align: center;
+    background-color: $background-color; // Footer background color
+    padding: 5px; // Padding for the footer
+}
+
+// Custom button styles
+.btn-custom {
+    background-color: $button-color; // Button color
+    color: $button-text-color; // Button text color
+    transition: background-color 0.3s, color 0.3s; // Smooth transition for colors
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $button-hover-color; // Change button background on hover
+        color: $button-text-color; // Button text color
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.timeline-view {
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px #32325d40,0 18px 36px -18px #0000004d,0 -12px 36px -8px #00000006;
+    padding: 20px;
+    background-color: $timeline-background-color;
+}
+
+.events-view {
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px #32325d40,0 18px 36px -18px #0000004d,0 -12px 36px -8px #00000006;
+    padding: 20px;
+    background-color: $events-background-color;
+}
+
+.category-view {
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px #0c0c8340,0 18px 36px -18px #0000004d,0 -12px 36px -8px #00000006;
+    padding: 20px;
+    background-color: $category-background-color;
+}
+
+.category-badge {
+    display: block;
+}
